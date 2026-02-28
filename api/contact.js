@@ -18,7 +18,7 @@ export default async function handler(req, res) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'web@janocabello.com',
+        from: 'hola@janocabello.com',
         to: process.env.JANO_EMAIL,
         reply_to: email,
         subject: `📬 Nuevo contacto web — ${tipo || 'Sin tipo'}`,
