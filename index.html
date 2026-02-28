@@ -576,7 +576,26 @@ footer {
   .conf-img { height: 280px; }
   .conf-right { grid-template-rows: auto auto; }
   .playbook { grid-template-columns: 1fr; gap: 40px; padding: 80px 24px; }
-  .testi-grid { grid-template-columns: 1fr; }
+
+  /* TESTIMONIOS MOBILE */
+  .testi-grid { grid-template-columns: 1fr !important; gap: 12px; }
+  .testi-card { padding: 28px 24px; }
+
+  /* COMUNIDAD MOBILE */
+  #comunidad { padding: 64px 24px !important; }
+  .comunidad-inner { 
+    grid-template-columns: 1fr !important; 
+    gap: 40px !important; 
+  }
+  #comunidad img { width: 55% !important; max-width: 220px !important; }
+  .comunidad-inner > div:first-child { order: 2; }
+  .comunidad-inner > div:last-child { order: 1; }
+  #comunidad .section-label { justify-content: flex-start; }
+  /* Value grid: 2 cols on mobile */
+  .comunidad-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
   .newsletter { padding: 80px 24px; }
   .newsletter-form { flex-direction: column; }
   .newsletter-input { border-right: 1.5px solid rgba(250,247,242,0.2); border-bottom: none; }
@@ -785,7 +804,7 @@ footer {
 
 <!-- COMUNIDAD -->
 <section class="fade-in" id="comunidad" style="background:var(--ink);padding:120px 80px;">
-  <div style="display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:center;max-width:1200px;margin:0 auto;">
+  <div class="comunidad-inner" style="display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:center;max-width:1200px;margin:0 auto;">
     
     <!-- Gorila + texto cercano -->
     <div style="position:relative;text-align:center;">
@@ -815,7 +834,7 @@ footer {
       </p>
 
       <!-- Value grid -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-bottom:44px;">
+      <div class="comunidad-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-bottom:44px;">
         <div style="background:rgba(255,255,255,0.04);padding:24px 22px;border-top:2px solid var(--accent);">
           <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:#faf7f2;line-height:1;">2.000€</div>
           <div style="font-size:11px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:rgba(250,247,242,0.45);margin-top:6px;">en formaciones incluidas</div>
